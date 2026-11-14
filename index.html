@@ -4,151 +4,67 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Interview · Anna Beyeler</title>
-<meta name="description" content="Video interview with Anna Beyeler about sex differences in insular cortex function in persistent alcohol drinking (Molecular Psychiatry, 2026).">
+<title>Interview videos</title>
 <style>
   :root {
-    --bg: #ffffff; --text: #191919; --muted: #5a5a5a; --line: #e6e6e6;
-    --accent: #e2001a; --card: #f7f7f7; --btn: #191919; --btn-text: #ffffff;
+    --bg: #ffffff; --text: #191919; --muted: #5a5a5a; --line: #e6e6e6; --accent: #e2001a; --card: #f7f7f7;
+    --rev-bg: #fff6e0; --rev-text: #5c4500; --ok-bg: #e6f4ea; --ok-text: #1e5b2e;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
   main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 56px; }
-  header { text-align: center; margin-bottom: 36px; }
-  header img { height: 96px; width: auto; margin-bottom: 18px; }
-  .kicker { color: var(--accent); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 13px; margin: 0 0 10px; }
-  h1 { font-size: clamp(24px, 4vw, 36px); line-height: 1.2; margin: 0 auto 14px; max-width: 820px; }
-  .who { color: var(--muted); margin: 0 0 6px; }
-  .who b { color: var(--text); }
-  .doi a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
-  .formats { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
-  section.card h2 { font-size: 18px; margin: 0 0 2px; }
-  section.card p.use { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
-  video { display: block; width: 100%; height: auto; border-radius: 8px; background: #000; }
-  .vertical video { max-height: 78vh; width: auto; max-width: 100%; margin: 0 auto; }
-  .dl { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-  .dl a {
-    display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 8px;
-    background: var(--btn); color: var(--btn-text); text-decoration: none; font-size: 14px; font-weight: 600;
-  }
-  .dl a.light { background: #ffffff; color: var(--text); border: 1px solid var(--line); }
-  .dl a span { font-weight: 400; opacity: .75; }
-  .switch { display: flex; justify-content: center; gap: 0; margin: 0 auto 10px; width: fit-content; max-width: 100%;
-    border: 1px solid var(--line); border-radius: 999px; padding: 4px; background: var(--card); }
-  .switch button { font: inherit; font-size: 15px; font-weight: 600; border: 0; background: transparent; color: var(--muted);
-    padding: 8px 16px; border-radius: 999px; cursor: pointer; }
-  .switch button[aria-selected="true"] { background: var(--btn); color: var(--btn-text); }
-  .switch button span { font-weight: 400; opacity: .75; }
-  .vnote { text-align: center; color: var(--muted); font-size: 14px; margin: 0 auto 22px; max-width: 640px; }
-  .version + .version { margin-top: 40px; }
-  .version > h2.vtitle { font-size: 20px; text-align: center; margin: 0 0 16px; }
-  .js .version > h2.vtitle { display: none; }
-  .js .version[hidden] { display: none; }
+  header { text-align: center; margin-bottom: 28px; }
+  header img { height: 80px; width: auto; margin-bottom: 14px; }
+  h1 { font-size: clamp(24px, 4vw, 32px); margin: 0 0 6px; }
+  header p { color: var(--muted); margin: 0; }
+  h2.group { font-size: 18px; margin: 32px 0 14px; }
+  h2.group span { color: var(--muted); font-weight: 400; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  a.item { display: block; color: inherit; text-decoration: none; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: border-color .15s; }
+  a.item:hover, a.item:focus-visible { border-color: #bbb; }
+  a.item img, .noimg { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #eee; }
+  .meta { padding: 12px 16px 16px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+  .badge.review { background: var(--rev-bg); color: var(--rev-text); }
+  .badge.ok { background: var(--ok-bg); color: var(--ok-text); }
+  .kicker { color: var(--accent); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 12px; margin: 0 0 4px; }
+  .meta h2 { font-size: 17px; line-height: 1.3; margin: 0 0 6px; }
+  .who { color: var(--muted); font-size: 14px; margin: 0; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
-  @media (max-width: 760px) {
-    main { padding-top: 24px; }
-    header img { height: 72px; }
-    .formats { grid-template-columns: 1fr; }
-    .vertical video { max-height: 80vh; }
-  }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <img src="logo.png" alt="Neurocentre Magendie">
-    <p class="kicker">Molecular Psychiatry · 2026</p>
-    <h1>Sex differences in insular cortex function in persistent alcohol drinking despite aversion in mice</h1>
-    <p class="who">Interview with <b>Anna Beyeler</b> · University of Bordeaux, INSERM 1215, Neurocentre Magendie</p>
-    <p class="doi">Read the article: <a href="https://doi.org/10.1038/s41380-026-03716-y">doi.org/10.1038/s41380-026-03716-y</a></p>
+    <img src="2026-11-14_IMG_2742_Cota_Marsicano/logo.png" alt="Neurocentre Magendie">
+    <h1>Interview videos</h1>
+    <p>2 awaiting approval · drafts are watermarked and not for distribution</p>
   </header>
-
-  <div class="switch" role="tablist" aria-label="Version">
-    <button role="tab" data-key="question" aria-selected="true">With the second question <span>1:35</span></button>
-    <button role="tab" data-key="short" aria-selected="false">Short version <span>1:29</span></button>
+  <h2 class="group">Awaiting approval <span>2</span></h2>
+  <div class="grid">
+    <a class="item" href="2026-11-14_IMG_2742_Cota_Marsicano/">
+      <img src="2026-11-14_IMG_2742_Cota_Marsicano/poster_16x9.jpg" alt="" loading="lazy">
+      <div class="meta">
+        <span class="badge review">To review</span>
+        <p class="kicker">Advanced Science · 2026</p>
+        <h2>Hypothalamic POMC Neurons Gate the Fear-Feeding Trade-Off</h2>
+        <p class="who">Daniela Cota &amp; Giovanni Marsicano</p>
+      </div>
+    </a>
+    <a class="item" href="2026-11-08_IMG_2682_Beyeler/">
+      <img src="2026-11-08_IMG_2682_Beyeler/poster_16x9.jpg" alt="" loading="lazy">
+      <div class="meta">
+        <span class="badge review">To review</span>
+        <p class="kicker">Molecular Psychiatry · 2026</p>
+        <h2>Sex differences in insular cortex function in persistent alcohol drinking despite aversion in mice</h2>
+        <p class="who">Anna Beyeler</p>
+      </div>
+    </a>
   </div>
-  <div class="version" id="v-question" data-key="question">
-    <h2 class="vtitle">With the second question · 1:35</h2>
-    <p class="vnote">Includes the interviewer’s question “Why is it important to keep studying what makes females and males different when it comes to addiction?”</p>
-    <div class="formats">
-      <section class="card">
-        <h2>Landscape 16:9</h2>
-        <p class="use">For LinkedIn, YouTube and websites · 1:35</p>
-        <video controls playsinline preload="metadata" poster="poster_question_16x9.jpg">
-          <source src="beyeler_interview_question_16x9_720p.mp4" type="video/mp4">
-        </video>
-        <div class="dl">
-          <a href="beyeler_interview_question_16x9_1080p.mp4" download>Download 1080p <span>60 MB</span></a>
-          <a class="light" href="beyeler_interview_question_16x9_720p.mp4" download>720p <span>32 MB</span></a>
-        </div>
-      </section>
-      <section class="card vertical">
-        <h2>Vertical 9:16</h2>
-        <p class="use">For Instagram Reels, TikTok, YouTube Shorts · 1:35</p>
-        <video controls playsinline preload="metadata" poster="poster_question_9x16.jpg">
-          <source src="beyeler_interview_question_9x16_720p.mp4" type="video/mp4">
-        </video>
-        <div class="dl">
-          <a href="beyeler_interview_question_9x16_1080p.mp4" download>Download 1080p <span>61 MB</span></a>
-          <a class="light" href="beyeler_interview_question_9x16_720p.mp4" download>720p <span>32 MB</span></a>
-        </div>
-      </section>
-    </div>
-  </div>
-  <div class="version" id="v-short" data-key="short">
-    <h2 class="vtitle">Short version · 1:29</h2>
-    <p class="vnote">Without the second question: Anna’s first answer continues directly with “So this is why it’s very important…”</p>
-    <div class="formats">
-      <section class="card">
-        <h2>Landscape 16:9</h2>
-        <p class="use">For LinkedIn, YouTube and websites · 1:29</p>
-        <video controls playsinline preload="metadata" poster="poster_short_16x9.jpg">
-          <source src="beyeler_interview_short_16x9_720p.mp4" type="video/mp4">
-        </video>
-        <div class="dl">
-          <a href="beyeler_interview_short_16x9_1080p.mp4" download>Download 1080p <span>56 MB</span></a>
-          <a class="light" href="beyeler_interview_short_16x9_720p.mp4" download>720p <span>30 MB</span></a>
-        </div>
-      </section>
-      <section class="card vertical">
-        <h2>Vertical 9:16</h2>
-        <p class="use">For Instagram Reels, TikTok, YouTube Shorts · 1:29</p>
-        <video controls playsinline preload="metadata" poster="poster_short_9x16.jpg">
-          <source src="beyeler_interview_short_9x16_720p.mp4" type="video/mp4">
-        </video>
-        <div class="dl">
-          <a href="beyeler_interview_short_9x16_1080p.mp4" download>Download 1080p <span>57 MB</span></a>
-          <a class="light" href="beyeler_interview_short_9x16_720p.mp4" download>720p <span>30 MB</span></a>
-        </div>
-      </section>
-    </div>
-  </div>
-
-  <footer>
-    Neurocentre Magendie · INSERM U1215 · University of Bordeaux
-  </footer>
+  <footer>Neurocentre Magendie · INSERM U1215 · University of Bordeaux</footer>
 </main>
-<script>
-  // Sélecteur de version (sans JavaScript, les deux versions s'affichent l'une sous l'autre).
-  document.documentElement.classList.add('js');
-  const tabs = [...document.querySelectorAll('.switch button')];
-  const versions = [...document.querySelectorAll('.version')];
-  function show(key) {
-    if (!versions.some(v => v.dataset.key === key)) key = 'question';
-    tabs.forEach(b => b.setAttribute('aria-selected', String(b.dataset.key === key)));
-    versions.forEach(v => {
-      const on = v.dataset.key === key;
-      v.hidden = !on;
-      if (!on) v.querySelectorAll('video').forEach(x => x.pause());
-    });
-  }
-  tabs.forEach(b => b.addEventListener('click', () => { history.replaceState(null, '', '#' + b.dataset.key); show(b.dataset.key); }));
-  show(location.hash.slice(1));
-</script>
 </body>
 </html>
